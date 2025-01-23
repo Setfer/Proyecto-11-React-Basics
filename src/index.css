@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap');
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "MedievalSharp", serif;
+}
+
+
+:root {
+  /* Fondo y neutros */
+  --color-background: #e4e4cc; /* Beige claro */
+  --color-light: #FFFFF0; /* Marfil */
+
+  /* Detalles oscuros */
+  --color-dark-brown: #4B2E1E; /* Marrón oscuro */
+  --color-soft-black: #2C2C2C; /* Negro suave */
+
+  /* Colores de acento */
+  --color-dark-red: #8B0000; /* Rojo oscuro */
+  --color-gold: #D4AF37; /* Dorado metálico */
+
+  /* Tonales secundarios */
+  --color-moss-green: #556B2F; /* Verde musgo */
+  --color-stone-gray: #A9A9A9; /* Gris piedra */
+}

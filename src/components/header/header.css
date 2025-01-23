@@ -1,0 +1,16 @@
+header{
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5dvh;
+  font-family: "MedievalSharp", serif;
+}
+
+header a {
+  color: var(--color-dark-red);
+}
+.active{
+  border-bottom: 2px solid black;
+}

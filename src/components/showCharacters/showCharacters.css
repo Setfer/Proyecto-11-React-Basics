@@ -1,0 +1,70 @@
+
+
+.characters{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  column-gap: 100px;
+  margin-left: 110px;
+  margin-right: 110px;
+  margin-top: 20px;
+}
+
+.characters > div{
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 80px;
+
+  
+}
+
+.characters-img{
+  height: 300px;
+  width: 230px;
+  object-fit:cover;
+  cursor: pointer;
+  position: relative;
+  pointer-events: auto;
+}
+
+.characters h3{
+  text-align: center;
+  position: relative;
+  z-index: 11;
+  color: var(--color-dark-red);
+  background-color:var(--color-light);
+  width: 150px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) ;
+  top: -12px
+}
+
+.marco{
+  position: absolute;
+  height:550px;
+  width: 440px;
+  top: -130px;
+  right: -105px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.buttons > button {
+  background-color: var(--color-light); 
+  border: 2px solid #000000;
+  border-radius: 8px; /* Suaviza los bordes */
+  padding: 10px 10px; 
+  color: var(--color-dark-red); 
+  font-size: 18px; /* Tamaño adecuado para el texto */
+  text-shadow: 1px 1px 2px #000; /* Leve sombra para un efecto más antiguo */
+  cursor: pointer; /* Cambio del puntero al pasar */
+  transition: all 0.3s ease-in-out; /* Animación para los efectos */
+
+}

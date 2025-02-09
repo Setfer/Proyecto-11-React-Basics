@@ -5,9 +5,7 @@
   flex-wrap: wrap;
   gap: 20px;
   column-gap: 100px;
-  margin-left: 110px;
-  margin-right: 110px;
-  margin-top: 20px;
+  margin: 50px;
 }
 
 .characters > div{
@@ -59,12 +57,12 @@
 .buttons > button {
   background-color: var(--color-light); 
   border: 2px solid #000000;
-  border-radius: 8px; /* Suaviza los bordes */
+  border-radius: 8px; 
   padding: 10px 10px; 
   color: var(--color-dark-red); 
-  font-size: 18px; /* Tamaño adecuado para el texto */
-  text-shadow: 1px 1px 2px #000; /* Leve sombra para un efecto más antiguo */
-  cursor: pointer; /* Cambio del puntero al pasar */
-  transition: all 0.3s ease-in-out; /* Animación para los efectos */
+  font-size: 18px; 
+  text-shadow: 1px 1px 2px #000; 
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
 }

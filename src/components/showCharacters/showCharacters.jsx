@@ -13,12 +13,13 @@ const ShowCharacters = (props) => {
     <div className='characters'>
       {props.characters.slice(0 + next, 15 + next).map((character) => (
         <div key={character.id}>
+          {console.log(character)}
           <img className='marco' src='public\assets\frame_transparent.png'/>
           <img
             className='characters-img'
             src={character.imageUrl}
             alt={character.fullName}
-            onClick={() => navigate(`/character/${character.id}`)}
+            onClick={() => navigate(`/character?name=${character.fullName}`)}
           />
           <h3>{character.fullName}</h3>
         </div>

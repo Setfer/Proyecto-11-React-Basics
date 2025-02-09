@@ -6,6 +6,7 @@ header{
   align-items: center;
   height: 5dvh;
   font-family: "MedievalSharp", serif;
+  z-index: 10;
 }
 
 header a {

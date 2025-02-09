@@ -1,34 +1,122 @@
-.character{
-
+.character {
   height: 90dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  width: 300px;
+  width: 100dvw;
 }
 
-.img-character{
-  height: 400px;
+.img-character {
+  height: 350px;
   width: 320px;
-  object-fit:cover;
-
-}
-
-.marco-character{
+  object-fit: cover;
   position: absolute;
-  height: 750px;
-  width: 650px;
-  left: -172px;
-  top: -20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.info{
-position: relative;
-bottom: -120px;
-text-align: center;
-display: flex;
-flex-direction: column;
-gap: 10px;
-color: var(--color-dark-red);
+.marco-character {
+  position: absolute;
+  height: 650px;
+  width: 550px;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info {
+  display: grid;
+  place-items: center; 
+  justify-content: center; 
+  align-content: center;
+  height: 89dvh; 
+  width: 100vw;
+  z-index: 1;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  color: var(--color-dark-red);
+}
+.info > h2 {
+  grid-column: 2;
+  grid-row: 1;
+  position: absolute;
+  top: 563px;
+  background-color: var(--color-light);
+  width: 150px;
+  text-align: center;
+}
+.info > p {
+  grid-column: 2;
+  grid-row: 1;
+  position: absolute;
+  top: 750px;
+  font-size: large;
+}
+.info > div{
+  display: grid;
+  place-items: center; 
+  justify-content: center; 
+  align-content: center; 
+  height: 100vh; 
+  width: 100vw;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+.titles {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+}
+.alias {
+  grid-column: 3;
+  grid-row: 1;
+  text-align: center;
+}
+
+@media (max-width: 890px) {
+  .character {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-character {
+    height: 300px;
+    width: 240px;
+    top: 250px;
+  }
+
+  .marco-character {
+    height: 500px;
+    width: 400px;
+    top: 250px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .info > h2 {
+    top: 375px;
+    font-size: medium;
+  }
+  .info > p{
+    top: 470px
+  }
+ .info > div{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 500px;
+  text-align: center;
+  gap: 10px;
+  height: auto;
+ }
 }
